@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+      <div class="container">
+          <br>
+        <h3>Thank You for the review</h3>
+        
+        <br><br>
+        <ul>
+            {% for review in reviews %}
+            <li> {{ reviews}} </li>
+            {% endfor %}
+        </ul>
+      </div>  
+{% endblock %}
